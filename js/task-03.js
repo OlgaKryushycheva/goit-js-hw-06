@@ -20,5 +20,4 @@ const makeGalleryCard = ({ url, alt }) => `<li class="js-gallery-item">
       </li>`;
 
 const markup = images.map(el => makeGalleryCard(el)).join('');
-console.log(markup);
 galleryListEl.insertAdjacentHTML('afterbegin', markup);
